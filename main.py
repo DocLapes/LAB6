@@ -14,3 +14,12 @@ print(paste(str, s))
 #строку, и выполняющую вставку строки в указанную позицию, если вставка 
 #на указанную позицию невозможна, то вернуть сообщение «paste operation is
 #not possible»;
+
+s = input("Введите строку: ")
+index = int(input("Введите позицию: "))
+b = input("Введите строку: ")
+def insert_dash(s, index):
+    if index > len(s):
+        return print("paste operation is not possible")
+    return s[:index] + b + s[index:]
+print(insert_dash(s, index)) 
